@@ -1,14 +1,17 @@
 #include <iostream>
+#include <string>
+#include <cmath>
 
-using namespace std;
-
+using namespace  std;
+ 
 int main() {
-    int sales = 95000;
-    double state_tax = sales / 100 * 4;
-    double country_tax = sales / 100 * 2;
-    cout << "sales = " << sales << endl
-         << "State Tax = " << state_tax << endl
-         << "Country Tax = " << country_tax << endl
-         << "Profits = " << sales - state_tax - country_tax;
+
+    double pi = 3.14;
+    cout << "Radius: ";
+    int radius;
+    cin >> radius;
+    double radius_2 = pow(radius, 2);
+    double cirlcle_area = pi * radius_2;
+    cout << "Area = " << cirlcle_area;
     return 0;
-}
+} 
